@@ -1,4 +1,2 @@
-node_modules
-index.js
-package_lock.json
-package.json
+*
+!.gitignore
