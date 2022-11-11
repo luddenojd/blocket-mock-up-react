@@ -1,5 +1,6 @@
 import React from "react"
 import blocket from "../img/blocket-logo.png"
+import blocketMobile from "../img/blocketLogotype.png"
 import plus from "../img/icons8-plus-24.png"
 import arrow from "../img/icons8-chevron-down-30.png"
 import search from "../img/icons8-search.svg"
@@ -21,7 +22,8 @@ const BlocketMenu = () => {
       </div>
       <div className="blocket-menu">
         <div className="logo-wrapper">
-          <img src={blocket} width={120} alt="" />
+          <img className="mobile" src={blocketMobile} width={114} alt="" />
+          <img className="desktop" src={blocket} width={120} alt="" />
           <button>
             <h4>Kategorier</h4>
             <img src={arrow} width={15} alt="" />

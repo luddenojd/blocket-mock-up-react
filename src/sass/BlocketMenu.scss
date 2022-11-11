@@ -54,6 +54,12 @@
     cursor: pointer;
     justify-content: space-between;
     width: 275px;
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
 
     button {
       display: flex;
@@ -106,6 +112,29 @@
         font-family: "Noto Sans JP", sans-serif;
         color: rgb(121 109 103);
         margin-top: -5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blocket-menu {
+    display: flex;
+    justify-content: space-evenly;
+    .logo-wrapper {
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+      button {
+        display: none;
+      }
+    }
+    .button-wrapper {
+      .add-plus {
+        display: none;
       }
     }
   }
