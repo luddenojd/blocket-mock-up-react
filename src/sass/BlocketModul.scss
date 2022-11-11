@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+.blocket-modul {
+  display: flex;
+  flex-direction: column;
+  width: 370px;
+  height: 350px;
+  align-items: center;
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: white;
+  margin-bottom: 40px;
+  border-radius: 6px;
+  color: rgb(67, 65, 64);
+  margin-top: 39px;
+  h1 {
+    font-size: 25px;
+    color: inherit;
+    margin-bottom: 0;
+    margin-top: 35px;
+  }
+  div {
+    p {
+      margin-bottom: 3px;
+    }
+    div {
+      display: flex;
+      .search-wrapper {
+        background-color: white;
+        margin: 0;
+        border-left: 1px solid rgb(159, 157, 156);
+        border-top: 1px solid rgb(159, 157, 156);
+        border-bottom: 1px solid rgb(159, 157, 156);
+        padding-left: 10px;
+        border-radius: 5px 0px 0px 5px;
+        img {
+          width: 22px;
+        }
+      }
+      input {
+        height: 50px;
+        border-right: 1px solid rgb(159, 157, 156);
+        border-top: 1px solid rgb(159, 157, 156);
+        border-bottom: 1px solid rgb(159, 157, 156);
+        border-left: none;
+        font-size: 17px;
+        padding-left: 10px;
+        width: 270px;
+        border-radius: 0px 5px 5px 0px;
+        &:focus {
+          outline-width: 0;
+        }
+      }
+    }
+    .search-list {
+      width: 274px;
+      background-color: white;
+      list-style-type: none;
+      margin-top: 0;
+      border-right: 1px solid rgb(159, 157, 156);
+      border-left: 1px solid rgb(159, 157, 156);
+      border-bottom: 1px solid rgb(159, 157, 156);
+      border-radius: 0px 0px 5px 5px;
+      z-index: 2;
+      position: absolute;
+      margin-top: -5px;
+      color: black;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .clock-icon {
+          margin-left: -28px;
+          margin-right: 13px;
+        }
+        .exit {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .find-ads {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(0, 132, 255);
+    color: white;
+    width: 316px;
+    height: 48px;
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(97, 173, 245);
+    }
+    h4 {
+      margin: 15px;
+    }
+  }
+
+  .select-location {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    width: 316px;
+    height: 55px;
+    justify-content: space-between;
+    color: rgb(67, 65, 64);
+    border: 1px solid rgb(159, 157, 156);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    .pin-wrapper {
+      display: flex;
+      align-items: center;
+      .location-pin {
+        width: 20px;
+        height: 20px;
+        margin-left: 5px;
+      }
+      h4 {
+        font-weight: 200;
+        font-size: 17px;
+        margin-left: 9px;
+        color: rgb(98, 96, 95);
+      }
+    }
+  }
+  .city-drop {
+    background-color: white;
+    padding-left: 0;
+    list-style-type: none;
+    overflow-y: scroll;
+    height: 200px;
+    border: 1px solid rgb(159, 157, 156);
+    border-radius: 5px;
+    margin-top: -11px;
+    z-index: 1;
+    position: absolute;
+    width: 314px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    li {
+      background-color: none;
+      color: rgb(98, 96, 95);
+      &:hover {
+        background-color: rgb(0, 132, 255);
+        color: white;
+      }
+      p {
+        margin-bottom: 0;
+        margin-top: 0;
+        margin-left: 38px;
+      }
+    }
+  }
+}

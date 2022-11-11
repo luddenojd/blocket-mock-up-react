@@ -1,0 +1,51 @@
+.color-wrapper {
+  display: flex;
+  height: 13px;
+  width: 100%;
+  .div1 {
+    width: 10%;
+    height: 13px;
+    background-color: rgb(156, 15, 15);
+  }
+  .div2 {
+    background-color: rgb(239, 118, 191);
+    height: 13px;
+    width: 10%;
+  }
+  .div3 {
+    background-color: rgb(250, 0, 0);
+    height: 13px;
+    width: 25%;
+  }
+  .div4 {
+    background-color: rgb(156, 15, 15);
+    height: 13px;
+    width: 25%;
+  }
+  .div5 {
+    background-color: rgb(227, 171, 0);
+    height: 13px;
+    width: 15%;
+  }
+  .div6 {
+    background-color: rgb(156, 15, 15);
+    height: 13px;
+    width: 10%;
+  }
+  .div7 {
+    background-color: rgb(239, 118, 191);
+    height: 13px;
+    width: 5%;
+  }
+}
+
+.footer-wrapper {
+  background-color: white;
+  .list-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    ul {
+      list-style-type: none;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: cadetblue;
+  margin: 0;
+  height: 700px;
+  font-family: "Noto Sans JP", sans-serif;
+  .add-frame {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    background: url("../img/christmas-background.jpg");
+    .header-wrapper {
+      margin-top: 300px;
+      h5 {
+        color: white;
+        font-weight: 500;
+        background: rgba(0, 0, 0, 0.6);
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        border-radius: 20px;
+        margin-bottom: 0;
+      }
+      h4 {
+        color: white;
+        font-weight: 500;
+        text-shadow: 1px 1px 2px black;
+        margin-top: 0;
+        margin-left: 40px;
+      }
+    }
+  }
+}
