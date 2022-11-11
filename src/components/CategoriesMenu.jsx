@@ -14,12 +14,12 @@ const CategoriesMenu = () => {
       </div>
       <div className="icons-wrapper">
         {allCategories?.map((icon) => (
-          <div className="icon">
+          <button className="icon">
             <div className="img-wrapper">
               <img src={icon.img} width={35} alt="" />
             </div>
             <h4>{icon.category}</h4>
-          </div>
+          </button>
         ))}
       </div>
     </div>

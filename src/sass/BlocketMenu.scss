@@ -54,18 +54,21 @@
     cursor: pointer;
     justify-content: space-between;
     width: 275px;
-    font-family: inherit;
+
     button {
       display: flex;
       align-items: center;
       background-color: rgb(255, 255, 255);
       cursor: pointer;
       border: none;
+
       h4 {
         font-weight: 100;
         color: rgb(121 109 103);
         font-size: 15px;
         margin-right: 10px;
+        margin-top: 16px;
+        font-family: "Noto Sans JP", sans-serif;
       }
     }
   }
@@ -81,8 +84,10 @@
       border: none;
       height: 32px;
       width: 150px;
-      border-radius: 6px;
+      border-radius: 4px;
       margin-right: 10px;
+      font-family: "Noto Sans JP", sans-serif;
+      font-weight: 400;
       cursor: pointer;
       &:hover {
         background-color: rgb(101, 178, 138);
@@ -97,9 +102,10 @@
       }
       p {
         margin: 0;
-        font-size: 11px;
-        font-family: inherit;
+        font-size: 10px;
+        font-family: "Noto Sans JP", sans-serif;
         color: rgb(121 109 103);
+        margin-top: -5px;
       }
     }
   }

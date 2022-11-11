@@ -5,6 +5,9 @@ import {
   businessItems,
   blocketItems,
 } from "../helper/constants.js"
+import appStore from "../img/nedladdning.png"
+import googlePlay from "../img/nedladdning-1.png"
+import schibsted from "../img/schibsted.svg"
 
 const FooterMenu = () => {
   return (
@@ -44,6 +47,23 @@ const FooterMenu = () => {
               <li key={item}>{item}</li>
             ))}
           </ul>
+        </div>
+        <div className="store-wrapper">
+          <img src={appStore} alt="" />
+          <img src={googlePlay} alt="" />
+        </div>
+        <div className="footer-info">
+          <img src={schibsted} alt="" />
+          <p>
+            Blocket har ingen koppling till denna webbplats. Denna webbplatsen
+            är enbart byggd för egenstudier.
+          </p>
+          <a
+            target="on_blank"
+            href="https://www.linkedin.com/in/ludwig-n%C3%B6jd-019029197"
+          >
+            Läs mer
+          </a>
         </div>
       </div>
     </>
