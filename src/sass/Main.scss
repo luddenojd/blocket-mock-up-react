@@ -3,7 +3,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: cadetblue;
+  background-color: white;
   margin: 0;
   height: 700px;
   font-family: "Noto Sans JP", sans-serif;
@@ -12,7 +12,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     height: 400px;
-    width: 100%;
+    max-width: 100%;
     background: url("../img/christmas-background.jpg");
     .header-wrapper {
       margin-top: 300px;
@@ -34,6 +34,30 @@ body {
         margin-top: 0;
         margin-left: 40px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    .add-frame {
+      height: 230px;
+      .header-wrapper {
+        h5 {
+          display: none;
+        }
+        h4 {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    .add-frame {
+      background: url("../img/Christmas-Tree-decorations-gifts.jpg");
     }
   }
 }

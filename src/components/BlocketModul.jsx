@@ -28,7 +28,12 @@ const BlocketModul = () => {
     }
     document.addEventListener("mousedown", handler)
     document.addEventListener("mousedown", thisHandler)
-  }, [cities, open])
+
+    return () => {
+      document.removeEventListener("mousedown", handler)
+      document.removeEventListener("mousedown", thisHandler)
+    }
+  }, [])
 
   function filterById(id) {
     if (allAreas) {
@@ -40,6 +45,7 @@ const BlocketModul = () => {
   return (
     <div className="blocket-modul">
       <h1>Välkommen till Blocket</h1>
+      <h2>Början på något stort</h2>
       <div>
         <p>Sök</p>
         <div onClick={() => setOpen(!open)}>
@@ -73,7 +79,7 @@ const BlocketModul = () => {
           ""
         )}
       </div>
-      <div>
+      <div className="drop-down-areas">
         <p>Välj plats</p>
         <button onClick={() => setCities(!cities)} className="select-location">
           <div className="pin-wrapper">
@@ -97,10 +103,14 @@ const BlocketModul = () => {
         ) : (
           ""
         )}
+
+        <button className="find-ads">
+          <h4>Hitta annonser</h4>
+        </button>
+        <button className="small-find-ads">
+          <h4>Sök</h4>
+        </button>
       </div>
-      <button className="find-ads">
-        <h4>Hitta annonser</h4>
-      </button>
     </div>
   )
 }

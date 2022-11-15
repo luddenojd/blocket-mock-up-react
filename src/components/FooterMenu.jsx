@@ -23,30 +23,34 @@ const FooterMenu = () => {
       </div>
       <div className="footer-wrapper">
         <div className="list-wrapper">
-          <ul>
-            <h4>Säkerhet</h4>
-            {safetyItems?.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <ul>
-            <h4>Villkor</h4>
-            {termsItems?.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <ul>
-            <h4>För företag</h4>
-            {businessItems?.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-          <ul>
-            <h4>Blocket</h4>
-            {blocketItems?.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
+          <div className="safety-and-terms">
+            <ul>
+              <h4>Säkerhet</h4>
+              {safetyItems?.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <ul>
+              <h4>Villkor</h4>
+              {termsItems?.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div className="business-and-blocket">
+            <ul>
+              <h4>För företag</h4>
+              {businessItems?.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <ul>
+              <h4>Blocket</h4>
+              {blocketItems?.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
         <div className="store-wrapper">
           <img src={appStore} alt="" />
