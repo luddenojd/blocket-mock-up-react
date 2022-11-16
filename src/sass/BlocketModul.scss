@@ -30,6 +30,7 @@
       .search-wrapper {
         background-color: white;
         margin: 0;
+        margin-right: 13px;
         border-left: 1px solid rgb(159, 157, 156);
         border-top: 1px solid rgb(159, 157, 156);
         border-bottom: 1px solid rgb(159, 157, 156);
@@ -49,6 +50,9 @@
         padding-left: 10px;
         width: 270px;
         border-radius: 0px 5px 5px 0px;
+        margin-top: -1px;
+        margin-bottom: -1px;
+        margin-right: -3px;
         &:focus {
           outline-width: 0;
         }
@@ -210,13 +214,19 @@
 
         .search-wrapper {
           margin-left: 10px;
+          input {
+            max-width: 655px;
+            width: 100%;
+          }
         }
       }
 
-      input {
-        max-width: 655px;
-        min-width: 100px;
-        margin-right: 10px;
+      .search-list {
+        max-width: 531px;
+        min-width: 80px;
+        width: 62%;
+        margin-left: 10px;
+        margin-top: -13px;
       }
     }
     .drop-down-areas {
@@ -242,7 +252,9 @@
       .city-drop {
         max-width: 655px;
         min-width: 100px;
-        width: 100%;
+        width: 71%;
+        margin-top: 55px;
+        margin-left: 10px;
       }
     }
   }

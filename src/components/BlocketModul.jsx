@@ -51,12 +51,12 @@ const BlocketModul = () => {
         <div onClick={() => setOpen(!open)}>
           <div className="search-wrapper">
             <img src={searchGlass} alt="Search" />
+            <input
+              onChange={(e) => setValue(e.target.value)}
+              placeholder="Vad vill du söka efter?"
+              type="text"
+            />
           </div>
-          <input
-            onChange={(e) => setValue(e.target.value)}
-            placeholder="Vad vill du söka efter?"
-            type="text"
-          />
         </div>
         {open ? (
           <ul ref={menuRef} className="search-list">
