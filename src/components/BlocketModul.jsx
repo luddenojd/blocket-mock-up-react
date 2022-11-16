@@ -47,7 +47,7 @@ const BlocketModul = () => {
       <h1>Välkommen till Blocket</h1>
       <h2>Början på något stort</h2>
       <div>
-        <p>Sök</p>
+        <p className="description-p-tag">Sök</p>
         <div onClick={() => setOpen(!open)}>
           <div className="search-wrapper">
             <img src={searchGlass} alt="Search" />
@@ -80,7 +80,7 @@ const BlocketModul = () => {
         )}
       </div>
       <div className="drop-down-areas">
-        <p>Välj plats</p>
+        <p className="description-p-tag">Välj plats</p>
         <button onClick={() => setCities(!cities)} className="select-location">
           <div className="pin-wrapper">
             <img className="location-pin" src={location} alt="" />

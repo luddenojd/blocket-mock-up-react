@@ -201,11 +201,18 @@
       margin-left: 18px;
     }
     div {
-      width: 100%;
-      margin-bottom: 10px;
-      p {
+      .description-p-tag {
         display: none;
       }
+      div {
+        width: 100%;
+        margin-bottom: 10px;
+
+        .search-wrapper {
+          margin-left: 10px;
+        }
+      }
+
       input {
         max-width: 655px;
         min-width: 100px;
@@ -213,14 +220,17 @@
       }
     }
     .drop-down-areas {
+      display: flex;
       .select-location {
         max-width: 655px;
         min-width: 100px;
         width: 100%;
         margin-left: 10px;
         margin-right: 10px;
+        .pin-wrapper {
+          margin-top: 10px;
+        }
       }
-      display: flex;
       .find-ads {
         display: none;
       }
