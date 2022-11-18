@@ -17,21 +17,25 @@ const BlocketModul = () => {
 
   useEffect(() => {
     let handler = (e) => {
-      if (!menuRef.current.contains(e.target)) {
+      if (!menuRef.current?.contains(e.target)) {
         setOpen(false)
       }
     }
     let thisHandler = (e) => {
-      if (!locationRef.current.contains(e.target)) {
+      if (!locationRef.current?.contains(e.target)) {
         setCities(false)
       }
     }
-    document.addEventListener("mousedown", handler)
-    document.addEventListener("mousedown", thisHandler)
+    document.addEventListener("mousedown", handler, {
+      capture: true,
+    })
+    document.addEventListener("mousedown", thisHandler, {
+      capture: true,
+    })
 
     return () => {
-      document.removeEventListener("mousedown", handler)
-      document.removeEventListener("mousedown", thisHandler)
+      document.removeEventListener("mousedown", handler, { capture: true })
+      document.removeEventListener("mousedown", thisHandler, { capture: true })
     }
   }, [])
 
