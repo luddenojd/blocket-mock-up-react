@@ -14,7 +14,7 @@ const CategoriesMenu = () => {
       </div>
       <div className="icons-wrapper">
         {allCategories?.map((icon) => (
-          <button className="icon">
+          <button key={icon.id} className="icon">
             <div className="img-wrapper">
               <img src={icon.img} width={35} alt="" />
             </div>

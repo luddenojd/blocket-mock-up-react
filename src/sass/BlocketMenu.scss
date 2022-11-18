@@ -77,6 +77,38 @@
         font-family: "Noto Sans JP", sans-serif;
       }
     }
+    .large-categories-menu {
+      display: flex;
+      justify-content: center;
+      height: 581px;
+      background-color: white;
+      z-index: 1;
+      position: absolute;
+      margin-top: 641px;
+      margin-left: -27px;
+      padding-right: 40px;
+      ul {
+        h4 {
+          font-size: 15px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        li {
+          font-size: 15px;
+          list-style-type: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+        p {
+          font-size: 15px;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
   }
   .button-wrapper {
     display: flex;
@@ -121,7 +153,11 @@
   .blocket-menu {
     display: flex;
     justify-content: space-evenly;
+
     .logo-wrapper {
+      .large-categories-menu {
+        display: none;
+      }
       .desktop {
         display: none;
       }

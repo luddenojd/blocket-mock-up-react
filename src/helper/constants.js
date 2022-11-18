@@ -90,3 +90,57 @@ export const blocketItems = [
   "Inspiration",
   "Tips och guider",
 ]
+
+export const fordonItems = [
+  "Bilar",
+  "Bildelar & biltillbehör",
+  "Båtar",
+  "Båtdelar & tillbehör",
+  "Husvagnar & husbilar",
+  "Mopeder & A-traktor",
+  "Motorcyklar",
+  "MC-delar & tillbehör",
+  "Lastbil, truck & entreprenad",
+  "Skogs- & lantbruksmaskiner",
+  "Snöskotrar",
+  "Snöskoterdelar & tillbehör",
+]
+
+export const homeItems = [
+  "Bygg & trädgård",
+  "Möbler & heminredning",
+  "Husgeråd & vitvaror",
+  "Verktyg",
+]
+
+export const personalItems = [
+  "Kläder & skor",
+  "Accessoarer & klockor",
+  "Barnkläder & skor",
+  "Barnartiklar & leksaker",
+]
+
+export const electricItems = [
+  "Datorer & TV-spel",
+  "Ljud & bild",
+  "Telefoner & tillbehör",
+]
+
+export const hobbyItems = [
+  "Upplevelser & nöje",
+  "Böcker & studentlitteratur",
+  "Cyklar",
+  "Djur",
+  "Hobby & samlarprylar",
+  "Hästar & ridsport",
+  "Jakt & fiske",
+  "Musikutrustning",
+  "Sport- & fritidsutrustning",
+]
+
+export const operationItems = [
+  "Affärsöverlåtelser",
+  "Inventarier & maskiner",
+  "Lokaler & fastigheter",
+  "Tjänster",
+]
